@@ -1,0 +1,290 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f7fa;
+}
+
+
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+    background:#0088cc;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin:0 15px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+}
+
+.nav-links a:hover{
+    color:yellow;
+}
+
+.book-btn{
+    padding:12px 25px;
+    border:none;
+    background:white;
+    color:#0088cc;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+/* Hero Section */
+
+.hero{
+    height:100vh;
+    background:url("https://img.magnific.com/free-vector/realistic-travel-background-with-elements_52683-77784.jpg?semt=ais_hybrid&w=740&q=80");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.overlay{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.4);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero-content{
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:65px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:22px;
+    margin-bottom:25px;
+}
+
+.btn{
+    padding:15px 30px;
+    border:none;
+    border-radius:30px;
+    background:#ff9800;
+    color:white;
+    cursor:pointer;
+    font-size:18px;
+}
+
+/* Search Box */
+
+.search-box{
+    width:80%;
+    margin:-50px auto 50px;
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+    display:flex;
+    gap:10px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.search-box input,
+.search-box button{
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:10px;
+}
+
+.search-box button{
+    background:#0088cc;
+    color:white;
+    border:none;
+}
+
+/* Features */
+
+.features{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.features h2{
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.feature-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.feature-card{
+    width:300px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+    transition:0.4s;
+}
+
+.feature-card:hover{
+    transform:translateY(-10px);
+}
+
+/* Destinations */
+
+.destinations{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.destinations h2{
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.destination-container{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.destination-card{
+    width:350px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    transition:0.4s;
+}
+
+.destination-card:hover{
+    transform:scale(1.05);
+}
+
+.destination-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.destination-card h3{
+    padding:15px;
+}
+
+/* Testimonials */
+
+.testimonials{
+    padding:80px 10%;
+    background:#eef5f9;
+    text-align:center;
+}
+
+.testimonials h2{
+    margin-bottom:40px;
+}
+
+.review{
+    background:white;
+    width:500px;
+    max-width:100%;
+    margin:20px auto;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* Newsletter */
+
+.newsletter{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.newsletter h2{
+    margin-bottom:20px;
+}
+
+.newsletter input{
+    width:300px;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:10px;
+}
+
+.newsletter button{
+    padding:12px 25px;
+    background:#0088cc;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+/* Footer */
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* Mobile Responsive */
+
+@media(max-width:768px){
+
+.navbar{
+    flex-direction:column;
+}
+
+.nav-links{
+    flex-direction:column;
+    text-align:center;
+    margin:20px 0;
+}
+
+.hero-content h1{
+    font-size:40px;
+}
+
+.search-box{
+    width:95%;
+}
+
+}
